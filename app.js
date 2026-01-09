@@ -38,15 +38,16 @@ const Header =  () => {
     )
 };
 
-const RestaurentCard = () => {
+const RestaurentCard = ({resName, cuisines, star, del_time}) => {
     return(
         <div className="res-card">
             <img className="res-logo" alt="res-logo"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVt4aAT6t8SWbxuE7YgThGOLOOPImFMqCpYg&s"/>
-            <h3>Tinku Singh</h3>
-            <h4>Biryani, Hydrabadi, Indian</h4>
-            <h4>4.4 star</h4>
-            <h4>30 minutes</h4>
+            <h3>{resName}</h3>
+            <h3>{cuisines}</h3>
+            <h3>{star}</h3>
+            <h3>{del_time}</h3>
+
         </div>
 
     )
@@ -57,16 +58,10 @@ const Body = () => {
         <div className="body">
             <div className="search"> Search </div>
             <div className="res-container">
-                <RestaurentCard />
-                <RestaurentCard />
-                <RestaurentCard />
-                <RestaurentCard />
-                <RestaurentCard />
-                <RestaurentCard />
-                <RestaurentCard />
-                <RestaurentCard />
-                <RestaurentCard />
-                <RestaurentCard />
+                <RestaurentCard resName="singh grills" cuisines= "Biryani, NorthIndian, Hydrabadi" star= "5" del_time="30 minutes" />
+                <RestaurentCard resName="Tinku Singh" cuisines= "Mutton, Sahi mutton, Hydrabadi" star= "4" de_-time="35 minutes"/>
+                <RestaurentCard resName="Arnavi" cuisines= "Mesh, veg & Non-Veg" star= "3" del_time="30 minutes"/>
+                
 
                 
             </div>
