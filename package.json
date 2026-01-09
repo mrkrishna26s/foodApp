@@ -1,0 +1,32 @@
+{
+  "name": "foodapp",
+  "version": "1.0.0",
+  "description": "creating online food ordering app using react",
+  "keywords": [
+    "online",
+    "food",
+    "foodapp"
+  ],
+  "homepage": "https://github.com/mrkrishna26s/foodApp#readme",
+  "bugs": {
+    "url": "https://github.com/mrkrishna26s/foodApp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrkrishna26s/foodApp.git"
+  },
+  "license": "ISC",
+  "author": "krishna",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  }
+}
